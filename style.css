@@ -1,0 +1,32 @@
+*{
+    font-family: Arial;
+}
+
+body {
+    padding: 0 20px;
+}
+h1, h2 {
+    font-size: larger;
+}
+
+input {
+    width: calc(100% - 20px);
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: 1px solid #009612;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    background: #009612;
+    border: none;
+    color: #fff;
+    font-size: larger;
+    text-transform: uppercase;
+}
