@@ -29,4 +29,5 @@ button {
     color: #fff;
     font-size: larger;
     text-transform: uppercase;
+	cursor: pointer;
 }

@@ -16,7 +16,7 @@ function httpGet(theUrl) {
                 resolve(xmlhttp.responseText);
             }
         }
-        xmlhttp.open("GET", theUrl, false);
+        xmlhttp.open("GET", theUrl, true);
         xmlhttp.send();
     });
 }
@@ -48,7 +48,7 @@ function getPageTitle(str) {
         var titleStart = str.substr(headingStart);
         return titleStart.substr(0, titleStart.indexOf("</h1>"));
     } else {
-        return "no header founded";
+        return "no header found";
     }
 }
 
