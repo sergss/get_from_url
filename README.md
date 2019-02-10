@@ -1,6 +1,6 @@
-# https://github.com/sergss/get_from_url
+## Get urls list and find videos to download
 
-Demo: https://github.com/sergss/get_from_url
+Demo: https://sergss.github.io/get_from_url/
 
 ```
 1) insert a link to a page with various videos and click "grab"
