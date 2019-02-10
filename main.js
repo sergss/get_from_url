@@ -53,6 +53,9 @@ function getPageTitle(str) {
 }
 
 function getUrlLink() {
+    var btn = document.getElementsByTagName("button")[0];
+    btn.setAttribute("disabled", "disabled");
+    btn.innerHTML = "Loading...";
     var inputUrl = document.getElementById("inputUrl").value;
     var targetDomain = getTargetDomain(inputUrl);
     // fast fix of CORS problem is to add "https://cors.io/?" to url string
@@ -65,7 +68,9 @@ function getUrlLink() {
         arrayOfLinks.forEach(function (elem) {
             resultHtml += '<a href="' + elem + '" target="_blank">' + elem + '</a><br>';
         });
+        btn.removeAttribute("disabled");
+        btn.innerHTML = "Grab more";
         document.getElementById("pageTitle").innerHTML = pageTitle;
         document.getElementById("result").innerHTML = resultHtml;
-    })
+    });
 }

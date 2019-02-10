@@ -28,6 +28,10 @@ button {
     border: none;
     color: #fff;
     font-size: larger;
-    text-transform: uppercase;
 	cursor: pointer;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    background: gray;
 }
