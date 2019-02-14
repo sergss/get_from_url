@@ -58,8 +58,7 @@ function getUrlLink() {
     btn.innerHTML = "Loading...";
     var inputUrl = document.getElementById("inputUrl").value;
     var targetDomain = getTargetDomain(inputUrl);
-    // fast fix of CORS problem is to add "https://cors.io/?" to url string
-    httpGet("https://cors.io/?" + inputUrl).then(function (value) {
+    httpGet(inputUrl).then(function (value) {
         var pageTitle = getPageTitle(value);
         var arrayOfLinks = getLinksArray(value).filter(function (item) {
             return item.indexOf(targetDomain) !== -1
